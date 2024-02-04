@@ -1,0 +1,42 @@
+body {
+  font-family: 'Ubuntu Mono', monospace;
+  margin: 20px;
+  background-color: #023047;
+  white-space: nowrap;
+}
+h1 {
+  margin: 0;
+}
+a {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ffb703;
+}
+#avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+#username {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.follow-count {
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
