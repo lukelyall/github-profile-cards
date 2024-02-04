@@ -1,3 +1,4 @@
+// setting the GitHub username
 const username = 'lukelyall';
 
 // fetching api data
@@ -29,7 +30,7 @@ fetch(`https://api.github.com/users/${username}`)
     followingElement.textContent = `Following: ${user.following}`;
     reposElement.textContent = `Public Repos: ${user.public_repos}`;
 
-    // creating an href for link to Github
+    // creating an href for a link to Github
     const account = document.createElement('a');
     account.href = user.html_url;
     account.textContent = 'Github';
