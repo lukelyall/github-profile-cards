@@ -26,14 +26,14 @@ fetch(`https://api.github.com/users/${username}`)
     // filling the elements with data
     avatarElement.src = user.avatar_url;
     usernameElement.textContent = user.login;
-    followersElement.textContent = `Followers: ${user.followers}`;
-    followingElement.textContent = `Following: ${user.following}`;
-    reposElement.textContent = `Public Repos: ${user.public_repos}`;
+    followersElement.textContent = `${user.followers}`;
+    followingElement.textContent = `${user.following}`;
+    reposElement.textContent = `${user.public_repos}`;
 
     // creating an href for a link to Github
     const account = document.createElement('a');
     account.href = user.html_url;
-    account.textContent = 'Github';
+    account.textContent = 'Github Overview';
     account.target = '_blank';
     accountElement.appendChild(account);
   }

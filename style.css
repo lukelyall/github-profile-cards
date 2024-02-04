@@ -18,12 +18,11 @@ p {
   align-items: center;
   flex-direction: column;
   max-width: 600px;
-  border: 1px solid black;
-  border-radius: 10px;
+
   padding: 20px;
   margin: 0 auto;
   text-align: center;
-  background-color: #ffb703;
+  background: linear-gradient(#ffb703, #ffffff);
 }
 #avatar {
   width: 100px;
@@ -34,9 +33,22 @@ p {
   font-size: 20px;
   margin-top: 10px;
 }
-.follow-count {
-  justify-content: center;
-  gap: 20px;
+.account-details {
   display: flex;
   flex-direction: row;
+}
+.account-numbers {
+  font-weight: bold;
+  font-size: 20px;
+}
+.account-rows {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  font-size: 10px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

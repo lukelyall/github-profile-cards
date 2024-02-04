@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./Images/icon.png">
   <link rel="stylesheet" href="style.css">
@@ -9,14 +10,25 @@
 </head>
 <body>
   <div class="user-info">
-    <img id="avatar">
-    <h1 id="username"></h1>
-    <p id="account"></p>
-    <div class="follow-count">
-      <p id="followers"></p>
-      <p id="following"></p>
+    <div class="profile">
+      <img id="avatar">
+      <h1 id="username"></h1>
+      <p id="account"></p>
     </div>
-    <p id="public-repos"></p>
+    <div class="account-details">
+      <div class="account-rows">
+        <p id="public-repos" class="account-numbers"></p>
+        <p>REPOS</p>
+      </div>
+      <div class="account-rows">
+        <p id="followers" class="account-numbers"></p>
+        <p>FOLLOWERS</p>
+      </div>
+      <div class="account-rows">
+        <p id="following" class="account-numbers"></p>
+        <p>FOLLOWING</p>
+      </div>
+    </div>
   </div>
   <script defer src="githubrequest.js"></script>
 </body>
