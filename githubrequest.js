@@ -1,5 +1,6 @@
 const username = 'lukelyall';
 
+// fetching api data
 fetch(`https://api.github.com/users/${username}`)
   .then(response => {
     if(!response.ok){
@@ -13,7 +14,7 @@ fetch(`https://api.github.com/users/${username}`)
   .catch(error => console.error(error))
 
   function displayUserInfo(user) {
-    // displaying information
+    // html elements
     const avatarElement = document.getElementById('avatar');
     const usernameElement = document.getElementById('username');
     const accountElement = document.getElementById('account');
@@ -21,6 +22,7 @@ fetch(`https://api.github.com/users/${username}`)
     const followingElement = document.getElementById('following');
     const reposElement = document.getElementById('public-repos');
     
+    // filling the elements with data
     avatarElement.src = user.avatar_url;
     usernameElement.textContent = user.login;
     followersElement.textContent = `Followers: ${user.followers}`;
